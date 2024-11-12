@@ -12,9 +12,9 @@ export default function Navbar() {
 
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'Pilot Training', path: '/pilot-training' },
-        { name: 'Cadet Pilot Training', path: '/cadet-pilot-training' },
-        { name: 'DGCA Classes', path: '/dgca-classes' },
+        { name: 'Admission', path: '/admission' },
+        // { name: 'Cadet Pilot Training', path: '/cadet-pilot-training' },
+        { name: 'DGCA Classes', path: '/dgcaclass' },
         { name: 'About Us', path: '/about' },
         { name: 'Contact', path: '/contact' }
     ];
