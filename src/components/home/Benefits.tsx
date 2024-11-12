@@ -26,7 +26,7 @@ export default function Benefits() {
                     <SiBasicattentiontoken size={30}/>
                     </div>
                         <h2 className="text-lg md:text-xl font-bold my-4">Individualized Attention</h2>
-                        <p className="font-thin">Our small class sizes enable personalized attention, catering to each child's unique needs.</p>
+                        <p className="font-thin">Our small class sizes enable personalized attention, catering to each child&apos;s unique needs.</p>
                     </div>
                     <div className="rounded-md border-2 shadow-md py-8 px-4 text-center md:text-left" data-aos="fade-up"
                 data-aos-duration="1000"

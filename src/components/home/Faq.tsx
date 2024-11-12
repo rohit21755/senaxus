@@ -27,7 +27,7 @@ const FAQAccordion = () => {
       <h1 className="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h1>
       <p className="text-center text-gray-600 mb-8 w-4/5 mx-auto">
         Find all the essential information you need in our FAQ section, designed to address the
-        most frequently asked questions and help you make informed decisions for your child's
+        most frequently asked questions and help you make informed decisions for your child&apos;s
         education.
       </p>
       

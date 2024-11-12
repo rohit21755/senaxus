@@ -43,8 +43,8 @@ export default function HeroSection() {
                          w-full md:w-4/5 lg:w-3/5 mx-auto 
                          px-0 md:px-4 lg:px-8">
             We prepare the next generation of pilots with world-class training, 
-            hands-on experience, and cutting-edge technology. Whether you're 
-            dreaming of a career in aviation or upgrading your skills, we're 
+            hands-on experience, and cutting-edge technology. Whether you&apos;re 
+            dreaming of a career in aviation or upgrading your skills, we&apos;re 
             here to help you soar.
           </h4>
 

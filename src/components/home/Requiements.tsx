@@ -18,7 +18,7 @@ export default function Requirements() {
                     <p className="text-center w-full sm:w-[80%] md:w-[70%] mx-auto mt-4 sm:mt-6 md:mt-8" data-aos="fade-down"
                 data-aos-duration="1000"
                 data-aos-delay="000">
-                        With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.
+                        With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child&apos;s future.
                     </p>
                     <button data-aos="fade-down"
                 data-aos-duration="1000"

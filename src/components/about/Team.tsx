@@ -28,7 +28,7 @@ export default function Team() {
                 </div>
                 <div className='bg-[#F8FCFE] p-4 rounded-md border-2 shadow-lg mt-8'>
                     <h1 className='font-bold text-lg'>Qualification: Diploma in Child Psychology</h1>
-                    <p className='my-2'>Ms. Emily's expertise in child psychology enables her to understand each child's unique needs and provide individualized support. Her caring nature fosters a strong sense of belonging and confidence in her students.</p>
+                    <p className='my-2'>Ms. Emily&apos;s expertise in child psychology enables her to understand each child&apos;s unique needs and provide individualized support. Her caring nature fosters a strong sense of belonging and confidence in her students.</p>
                 </div>
             </div>
             <div className="rounded-md p-8 border-2 " data-aos="fade-right"
@@ -49,7 +49,7 @@ export default function Team() {
                 </div>
                 <div className='bg-[#F8FCFE] p-4 rounded-md border-2 shadow-lg mt-8'>
                     <h1 className='font-bold text-lg'>Qualification: Diploma in Child Psychology</h1>
-                    <p className='my-2'>Ms. Emily's expertise in child psychology enables her to understand each child's unique needs and provide individualized support. Her caring nature fosters a strong sense of belonging and confidence in her students.</p>
+                    <p className='my-2'>Ms. Emily&apos;s expertise in child psychology enables her to understand each child&apos;s unique needs and provide individualized support. Her caring nature fosters a strong sense of belonging and confidence in her students.</p>
                 </div>
             </div>
             

@@ -37,7 +37,7 @@ export default function Wcu() {
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
                     <h2 className='text-2xl font-bold my-1'>Innovation and Technology</h2>
-                    <p className='font-thin'>Innovation became the driving force behind our kindergarten's progress from 2016 to 2020. Embracing the latest educational technologies, we crafted engaging and interactive learning experiences for our students.</p>
+                    <p className='font-thin'>Innovation became the driving force behind our kindergarten&apos;s progress from 2016 to 2020. Embracing the latest educational technologies, we crafted engaging and interactive learning experiences for our students.</p>
                 </div>
                 <div className='my-2' data-aos="fade-left"
     data-aos-offset="200"

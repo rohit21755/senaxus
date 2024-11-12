@@ -59,7 +59,7 @@ export default function Hero(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
-        Whether you're a beginner looking to obtain your Private Pilot License (PPL) or an experienced aviator pursuing advanced certifications, we offer a range of tailored programs that meet your specific needs and career aspirations.
+        Whether you&apos;re a beginner looking to obtain your Private Pilot License (PPL) or an experienced aviator pursuing advanced certifications, we offer a range of tailored programs that meet your specific needs and career aspirations.
         </p>
         <p className='' data-aos="fade-right"
     data-aos-offset="200"
@@ -69,7 +69,7 @@ export default function Hero(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">We pride ourselves on maintaining the highest safety standards, adhering to both national and international aviation regulations.
-        Join us at and embark on your journey toward a rewarding career in aviation. With us, you don't just learn to fly; you become part of a community that lives and breathes aviation.</p>
+        Join us at and embark on your journey toward a rewarding career in aviation. With us, you don&apos;t just learn to fly; you become part of a community that lives and breathes aviation.</p>
     </div>
     <div className="flex justify-center w-full" data-aos="fade-in"
     data-aos-offset="200"
@@ -111,7 +111,7 @@ export default function Hero(){
         <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'><RiFlashlightFill size={25}/></div>
         <h2 className="text-xl font-bold my-4">Excellence and Professionalism</h2>
         <p className="font-thin">
-            Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.
+            Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy&apos;s commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.
         </p>
     </div>
     <div className="flex-1 max-w-xs rounded-md border-2 shadow-md py-12 px-4" data-aos="fade-left"

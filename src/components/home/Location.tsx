@@ -28,7 +28,7 @@ export default function Location(){
         data-aos-delay="000">Flight School Locations</h1>
         <h5 className="text-lg w-1/2 mx-auto mt-6" data-aos="fade-right"
         data-aos-duration="2000"
-        data-aos-delay="000">With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future.</h5>
+        data-aos-delay="000">With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child&apos;s future.</h5>
         <button data-aos="fade-up"
         data-aos-duration="2000"
         data-aos-delay="000" className="bg-[#3F3D56] text-white border border-white 
@@ -111,7 +111,7 @@ export default function Location(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center" className="font-semibold text-base sm:text-lg md:text-xl mt-4 sm:mt-8 md:mt-12 w-full sm:w-10/12 text-justify">
-                We prepare the next generation of pilots with world-class training, hands-on experience, and cutting-edge technology. Whether you're dreaming of a career in aviation or upgrading your skills, we’re here to help you soar.
+                We prepare the next generation of pilots with world-class training, hands-on experience, and cutting-edge technology. Whether you&apos;re dreaming of a career in aviation or upgrading your skills, we’re here to help you soar.
             </p>
             <button data-aos="fade-up"
     data-aos-offset="200"

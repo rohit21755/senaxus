@@ -7,7 +7,7 @@ export default function Medical(){
         </div>
         <div className="my-8 text-center">
         <h1 className="text-3xl font-bold">Medical Fitness Requirements</h1>
-        <h5 className="text-lg w-1/2 mx-auto mt-6">We need to be 100% sure that you are medically fit to fly before you invest your money in a pilot course as it's a mandatory requirement. The medicals are a 2 step process.</h5>
+        <h5 className="text-lg w-1/2 mx-auto mt-6">We need to be 100% sure that you are medically fit to fly before you invest your money in a pilot course as it&apos;s a mandatory requirement. The medicals are a 2 step process.</h5>
     </div>
     <div className="flex p-12">
         <div className="flex justify-start w-1/2">
