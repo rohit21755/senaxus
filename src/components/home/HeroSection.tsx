@@ -1,6 +1,13 @@
+"use client";
 import Hero from '@/assets/hero.png';
-
+//@ts-ignore
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 export default function HeroSection() {
+  useEffect(() => {
+    AOS.init();
+}, []);
   return (
     <div 
       style={{
@@ -24,12 +31,16 @@ export default function HeroSection() {
         {/* Adjusted margin top for different screen sizes */}
         <div className="mt-[100px] md:mt-[200px] lg:mt-[300px] xl:mt-[350px]">
           {/* Responsive heading */}
-          <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-widest leading-tight md:leading-snug">
+          <h1 data-aos="fade-down"
+                data-aos-duration="1000"
+                data-aos-delay="000" className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-widest leading-tight md:leading-snug">
             Your Future as a Pilot starts here
           </h1>
 
           {/* Responsive subheading */}
-          <h4 className="text-lg md:text-xl lg:text-2xl tracking-widest mt-4 md:mt-6 
+          <h4 data-aos="fade-down"
+                data-aos-duration="1500"
+                data-aos-delay="000" className="text-lg md:text-xl lg:text-2xl tracking-widest mt-4 md:mt-6 
                          w-full md:w-4/5 lg:w-3/5 mx-auto 
                          px-0 md:px-4 lg:px-8">
             We prepare the next generation of pilots with world-class training, 
@@ -39,7 +50,9 @@ export default function HeroSection() {
           </h4>
 
           {/* Responsive button */}
-          <button className="bg-transparent text-white border border-white 
+          <button data-aos="fade-down"
+                data-aos-duration="2000"
+                data-aos-delay="000" className="bg-transparent text-white border border-white 
                            px-4 md:px-6 py-2 md:py-2.5 rounded 
                            hover:bg-white hover:text-black 
                            transition duration-300 

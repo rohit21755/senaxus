@@ -8,7 +8,14 @@ export default function Navigate() {
         <h5 className="text-lg w-3/5 mx-auto mt-6">Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school</h5>
         
     </div>
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full" data-aos="fade-up"
+    data-aos-offset="200"
+    // data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center">
         <button className="bg-[#3F3D56] text-white border border-white 
                            px-4 md:px-6 py-2 md:py-2.5 rounded 
                            hover:bg-black 
@@ -20,7 +27,14 @@ export default function Navigate() {
                 </div>
 
                 <div className="py-16 flex justify-center gap-x-8 px-40">
-    <div className="w-2/5 py-10 px-12 text-center border-2 shadow-lg rounded-md">
+    <div className="w-2/5 py-10 px-12 text-center border-2 shadow-lg rounded-md" data-aos="fade-right"
+    data-aos-offset="200"
+    // data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center">
         <Image src={hi} alt="" className="w-full my-4" />
         <DashedLine />
         <h1 className="text-2xl font-bold my-6 text-start">DGCA CPL Ground Classes</h1>
@@ -32,7 +46,14 @@ export default function Navigate() {
         </button>
     </div>
 
-    <div className="w-2/5 py-10 px-12 text-center border-2 shadow-lg rounded-md">
+    <div className="w-2/5 py-10 px-12 text-center border-2 shadow-lg rounded-md" data-aos="fade-left"
+    data-aos-offset="200"
+    // data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center">
         <Image src={hi} alt="" className="w-full my-4" />
         <DashedLine />
         <h1 className="text-2xl font-bold my-6 text-start">DGCA CPL Ground Classes</h1>

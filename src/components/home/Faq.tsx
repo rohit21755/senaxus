@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 const FAQAccordion = () => {
-  const [openItems, setOpenItems] = useState<number | null>(1); // Set first item open by default
+  const [openItems, setOpenItems] = useState<number | null>(0); // Set first item open by default
     
   const faqs = [
     {
@@ -59,6 +59,9 @@ const FAQAccordion = () => {
         {faqs.map(faq => (
           <div key={faq.id} className="flex flex-col">
             <div 
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="000"
               className={`p-4 flex justify-between border-2 rounded-t-md cursor-pointer ${
                 openItems === faq.id ? 'bg-white' : 'bg-[#E3F5FF]'
               } ${openItems === faq.id ? 'border-b-0' : 'rounded-b-md'}`}

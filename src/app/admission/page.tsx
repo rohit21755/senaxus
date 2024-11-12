@@ -6,11 +6,11 @@ export default function Admission() {
     return<>
     <div className="p-16">
     <div
-                // style={{
-                //     backgroundImage: `url(${plain.src})`,
-                //     backgroundSize: 'cover',
-                //     backgroundPosition: 'center',
-                // }}
+                style={{
+                    backgroundImage: `url(${plain.src})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
                 className="relative h-64 sm:h-80 md:h-96 lg:h-[50vh] rounded-lg p-4 sm:p-8 border-2 shadow-lg "
             >
                 <div className="flex">
