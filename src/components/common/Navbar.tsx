@@ -43,11 +43,9 @@ export default function Navbar() {
                 {navItems.map((item) => (
                     <Link key={item.path} href={item.path}>
                         <p
-                            className={`block py-2 px-4 rounded ${
-                                router.pathname === item.path
-                                    ? 'bg-blue-100 text-blue-600'  // Active link styles
-                                    : 'text-gray-700 hover:bg-gray-100'
-                            }`}
+                            className={`block py-2 px-4 rounded 
+                                  text-gray-700 hover:bg-gray-100
+                            `}
                         >
                             {item.name}
                         </p>
