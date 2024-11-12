@@ -7,6 +7,7 @@ import aus from '@/assets/australia.png'
 import canda from '@/assets/canada.png'
 import world from '@/assets/world.png'
 import h1 from '@/assets/h1.png'
+import planwm from '@/assets/planwm.png'
 import { useEffect } from "react"
 //@ts-ignore
 import AOS from "aos";
@@ -16,7 +17,12 @@ export default function Location(){
         AOS.init();
     }, []);
     return<>
-    <div className="px-12 py-24 text-center">
+    <div className="px-12 py-24 text-center" style={{
+                    backgroundImage: `url(${planwm.src})`,
+                    backgroundSize: '36%',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                }}>
         <h1 className="text-3xl font-bold"
         data-aos="fade-left"
         data-aos-duration="2000"

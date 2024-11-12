@@ -1,8 +1,14 @@
 import wcu from '@/assets/wcu.png'
 import Image from 'next/image'
+import planwm from '@/assets/planwm.png'
 export default function Wcu() {
     return <>
-    <div className="p-16 text-center">
+    <div className="p-16 text-center" style={{
+                    backgroundImage: `url(${planwm.src})`,
+                    backgroundSize: '50%',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                }}>
         <h1 className="font-bold text-4xl ">Why choose Senaxus ?</h1>
         <p className="text-gray-600 max-w-3xl mx-auto">
           Founded with a passion for early education in 2005, our kindergarten school boasts a rich history of 

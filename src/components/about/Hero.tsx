@@ -1,6 +1,9 @@
+import { FaChartPie } from "react-icons/fa";
 import about from '@/assets/about.png'
 import Image from 'next/image'
 import road from '@/assets/road.png'
+import { RiFlashlightFill } from "react-icons/ri";
+import { MdOutlineBarChart } from "react-icons/md";
 export default function Hero(){
 
     return <>
@@ -16,8 +19,8 @@ export default function Hero(){
                 <p data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
+    data-aos-duration="500"
+    // data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center" className="text-xl sm:text-2xl md:text-3xl font-bold text-start mb-4 md:mb-8 ml-4 sm:ml-8">
@@ -91,6 +94,7 @@ export default function Hero(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
+        <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'><FaChartPie size={25}/></div>
         <h2 className="text-xl font-bold my-4">Safety First</h2>
         <p className="font-thin">
             Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.
@@ -104,6 +108,7 @@ export default function Hero(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
+        <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'><RiFlashlightFill size={25}/></div>
         <h2 className="text-xl font-bold my-4">Excellence and Professionalism</h2>
         <p className="font-thin">
             Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.
@@ -117,6 +122,7 @@ export default function Hero(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
+        <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'><MdOutlineBarChart size={25}/></div>
         <h2 className="text-xl font-bold my-4">Flexible Program</h2>
         <p className="font-thin">
             Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners.

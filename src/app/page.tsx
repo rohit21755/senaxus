@@ -11,7 +11,7 @@ import Requirements from "@/components/home/Requiements";
 import Benefits from "@/components/home/Benefits";
 import FAQAccordion from "@/components/home/Faq";
 import TestimonialSlider from "@/components/home/TestimonialSlider";
-
+import GetHired from "@/components/home/GetHired";
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -23,8 +23,9 @@ export default function Home() {
    <Offered/>
    <Requirements/>
    <Benefits/>
+   <GetHired/>
    <FAQAccordion/>
-   <TestimonialSlider/>
+   {/* <TestimonialSlider/> */}
    </>
   );
 }

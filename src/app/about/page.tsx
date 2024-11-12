@@ -7,6 +7,7 @@ import Hero from "@/components/about/Hero"
 import Wcu from "@/components/about/Wcu"
 import Team from "@/components/about/Team"
 import Navigate from "@/components/about/Navigate"
+import AircraftType from "@/components/about/AircraftType";
 export default function About(){
     useEffect(() => {
         AOS.init();
@@ -14,6 +15,7 @@ export default function About(){
     return<>
     <Hero/>
     <Wcu/>
+    <AircraftType/>
     <Team/>
     <Navigate/>
     </>
