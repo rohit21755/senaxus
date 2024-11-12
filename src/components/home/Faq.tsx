@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 const FAQAccordion = () => {
   const [openItems, setOpenItems] = useState<number | null>(0); // Set first item open by default

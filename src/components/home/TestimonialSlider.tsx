@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // import { ChevronLeft, ChevronRight } from 'lucide-react';
 // import { FaCaretLeft } from "react-icons/fa";
 import img from "@/assets/hero.png"
-import Image from 'next/image';
+
 const TestimonialSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 

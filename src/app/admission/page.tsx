@@ -1,5 +1,4 @@
 import Image from "next/image";
-import plain from '@/assets/plain.png'
 import Requirements from "@/components/admission/Requirement";
 import Medical from "@/components/admission/Medical";
 import img from '@/assets/ghghg.webp'

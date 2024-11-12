@@ -9,7 +9,6 @@ import world from '@/assets/world.png'
 import h1 from '@/assets/h1.png'
 import planwm from '@/assets/planwm.png'
 import { useEffect } from "react"
-//@ts-ignore
 import AOS from "aos";
 import 'aos/dist/aos.css'
 export default function Location(){
