@@ -146,7 +146,7 @@ export default function Offered(){
     {/* </div> */}
 </div>
         </div>
-        <div className="px-28 my-8">
+        <div className="md:px-28 px-8 my-8">
         <div className="flex gap-12 md:flex-row flex-col  justify-between p- border-2 rounded-xl shadow-xl">
     <div className="flex-1 p-12">
         <h1 className="text-3xl font-bold my-4" data-aos="fade-up"
