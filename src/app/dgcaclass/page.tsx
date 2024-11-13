@@ -35,7 +35,7 @@ export default function DGCAClass() {
         "License Conversion Checks": `For foreign-trained pilots, license conversion to DGCA CPL includes additional tests and requirements such as cross-country flights and night flying logs.`,
         "License Conversion": `Once all prerequisites and tests are completed, a License Conversion Application can be submitted to DGCA. Upon satisfactory review, the CPL is issued within a month.`,
       };
-    const [selectedSection, setSelectedSection] = useState("");
+    const [selectedSection, setSelectedSection] = useState("10th and 12th Board Verification Certificate");
     return (
         <>
             <div className="px-4 py-8 sm:px-8 lg:px-16">
@@ -84,7 +84,7 @@ export default function DGCAClass() {
                         </div>
                     </div>
                 </div>
-                <h1 className="text-center text-3xl font-bold">Process to become a pilot</h1>
+                <h1 id="pilot" className="text-center text-3xl font-bold">Process to become a pilot</h1>
                 <div className="flex flex-col md:flex-row gap-8 my-12">
           {/* Buttons Section */}
           <div className="w-full md:w-1/4 hidden md:block">

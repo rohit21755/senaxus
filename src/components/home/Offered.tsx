@@ -1,6 +1,7 @@
 import Boxes from "../ui/Boxes"
 import Image from "next/image"
 import h2 from "@/assets/h2.png"
+import Link from "next/link"
 export default function Offered(){
 
     return <>
@@ -24,6 +25,7 @@ export default function Offered(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">Aviation Course Offered</h2>
+    <Link href="/dgcaclass">
             <button className="bg-[#3F3D56] text-white border border-white 
                            px-4 md:px-6 py-2 md:py-2.5 rounded 
                            hover:bg-black 
@@ -32,6 +34,7 @@ export default function Offered(){
                            mt-4 md:mt-6 lg:mt-8">
             Learn More
           </button>
+          </Link>
             </div>
             <div className="w-1/5"></div>
         </div>

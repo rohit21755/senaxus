@@ -4,6 +4,7 @@ import Image from 'next/image'
 import road from '@/assets/road.png'
 import { RiFlashlightFill } from "react-icons/ri";
 import { MdOutlineBarChart } from "react-icons/md";
+import Link from "next/link";
 export default function Hero(){
 
     return <>
@@ -79,9 +80,9 @@ export default function Hero(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
-                    <button className="border-2 py-2 px-4 rounded-md hover:bg-black hover:text-white">
+                    <Link href="/about" className="border-2 py-2 px-4 rounded-md hover:bg-black hover:text-white">
                         Our Vision
-                    </button>
+                    </Link>
                 </div>
     <h1 className='text-4xl font-bold mx-auto text-center mx-autot w-[70%] my-8'>To be a global leader in flight training, producing skilled and responsible aviators who contribute to the future of aviation.</h1>
     </div>

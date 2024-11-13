@@ -3,6 +3,7 @@ import Hero from '@/assets/hero.png';
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Link from 'next/link';
 export default function HeroSection() {
   useEffect(() => {
     AOS.init();
@@ -49,16 +50,17 @@ export default function HeroSection() {
           </h4>
 
           {/* Responsive button */}
-          <button data-aos="fade-down"
+          <Link href="/admission"><button  data-aos="fade-down"
                 data-aos-duration="2000"
                 data-aos-delay="000" className="bg-transparent text-white border border-white 
                            px-4 md:px-6 py-2 md:py-2.5 rounded 
                            hover:bg-white hover:text-black 
                            transition duration-300 
                            text-sm md:text-base
-                           mt-4 md:mt-6 lg:mt-8">
+                           mt-4 md:mt-6 lg:mt-12">
             View Courses
-          </button>
+          </button></Link>
+          
         </div>
       </div>
     </div>

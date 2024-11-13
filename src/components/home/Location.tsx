@@ -11,6 +11,7 @@ import planwm from '@/assets/planwm.png'
 import { useEffect } from "react"
 import AOS from "aos";
 import 'aos/dist/aos.css'
+import Link from "next/link";
 export default function Location(){
     useEffect(() => {
         AOS.init();
@@ -29,6 +30,7 @@ export default function Location(){
         <h5 className="text-lg md:w-1/2 mx-auto mt-6" data-aos="fade-right"
         data-aos-duration="2000"
         data-aos-delay="000">With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child&apos;s future.</h5>
+        <Link href="/about">
         <button data-aos="fade-up"
         data-aos-duration="2000"
         data-aos-delay="000" className="bg-[#3F3D56] text-white border border-white 
@@ -39,6 +41,7 @@ export default function Location(){
                            mt-4 md:mt-6 lg:mt-8">
             Learn More
           </button>
+          </Link>
     </div>
     <div  className="md:p-12 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-12">
     <div>
@@ -93,6 +96,7 @@ export default function Location(){
                     DGCA Certified - Chief Ground Instructor
                 </p>
                 <div className="w-full h-fit md:pl-8">
+                    <Link href="/dgcaclass">
                 <button 
                     data-aos="fade-up"
                     data-aos-duration="2000"
@@ -105,6 +109,7 @@ export default function Location(){
                                mt-4 md:mt-6 lg:mt-8 mx-auto md:mx-0">
                     Learn More
                 </button>
+                </Link>
                 </div>
                 
             </div>

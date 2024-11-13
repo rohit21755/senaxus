@@ -1,6 +1,7 @@
 import { TbRating18Plus } from "react-icons/tb";
 import { RiEnglishInput } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
+import Link from "next/link";
 import planwm from '@/assets/planwm.png'
 export default function Requirements() {
     return (
@@ -20,6 +21,7 @@ export default function Requirements() {
                 data-aos-delay="000">
                         With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child&apos;s future.
                     </p>
+                    <Link href="/dgcaclass#pilot">
                     <button data-aos="fade-down"
                 data-aos-duration="1000"
                 data-aos-delay="000" className="bg-[#3F3D56] text-white border border-white 
@@ -28,6 +30,7 @@ export default function Requirements() {
                                       text-sm md:text-base mt-4 sm:mt-6 md:mt-8">
                         Learn More
                     </button>
+                    </Link>
                 </div>
                 
                 <div className="flex flex-col md:flex-row justify-center md:justify-evenly gap-8 md:gap-20 my-8 md:my-12">
