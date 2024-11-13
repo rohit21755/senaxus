@@ -23,9 +23,9 @@ const FAQAccordion = () => {
   };
 
   return (
-    <div className="p-16 mx-auto space-y-4">
+    <div className="md:p-16 p-8 mx-auto space-y-4">
       <h1 className="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h1>
-      <p className="text-center text-gray-600 mb-8 w-4/5 mx-auto">
+      <p className="text-center text-gray-600 mb-8 md:w-4/5 w-11/10 mx-auto">
         Find all the essential information you need in our FAQ section, designed to address the
         most frequently asked questions and help you make informed decisions for your child&apos;s
         education.
@@ -36,7 +36,7 @@ const FAQAccordion = () => {
           <div key={faq.id} className="flex flex-col">
             <div
               data-aos={loadedItems.includes(faq.id) ? undefined : "fade-in"}
-              data-aos-duration="1000"
+              data-aos-duration="300"
               data-aos-once="true"
               className={`p-4 flex justify-between border-2 rounded-t-md cursor-pointer ${
                 openItems === faq.id ? 'bg-white' : 'bg-[#E3F5FF]'

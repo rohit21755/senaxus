@@ -13,12 +13,9 @@ export default function Team() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 py-8 px-4 sm:px-8 md:px-16 lg:px-24">
-                <div className="rounded-md p-6 sm:p-8 border-2" data-aos="fade-right"
-                    data-aos-offset="200"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="true"
+                <div className="rounded-md p-6 sm:p-8 border-2" data-aos="fade-up"
+                
+                   
                     data-aos-anchor-placement="top-center">
                     <div className="flex justify-between mb-6 sm:mb-8">
                         <div className="flex gap-4 sm:gap-6">
@@ -33,13 +30,11 @@ export default function Team() {
                     </div>
                 </div>
 
-                <div className="rounded-md p-6 sm:p-8 border-2" data-aos="fade-right"
-                    data-aos-offset="200"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="true"
-                    data-aos-anchor-placement="top-center">
+                <div className="rounded-md p-6 sm:p-8 border-2" data-aos="fade-up"
+
+               
+
+>
                     <div className="flex justify-between mb-6 sm:mb-8">
                         <div className="flex gap-4 sm:gap-6">
                             <Image src={profile} alt='' height={40} width={40} />
@@ -56,11 +51,9 @@ export default function Team() {
 
             <div className="flex justify-center w-full mt-8">
                 <button data-aos="fade-down"
-                    data-aos-offset="200"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="true"
+
+                  
+
                     data-aos-anchor-placement="top-center"
                     className="bg-[#3F3D56] text-white border border-white 
                                px-4 sm:px-6 py-2 sm:py-2.5 rounded 

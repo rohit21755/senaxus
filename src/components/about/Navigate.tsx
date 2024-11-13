@@ -12,11 +12,9 @@ export default function Navigate() {
             </div>
 
             <div className="flex justify-center w-full mb-8" data-aos="fade-up"
-                data-aos-offset="200"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="true"
+  
+                data-aos-duration="300"
+
                 data-aos-anchor-placement="top-center">
                 <button className="bg-[#3F3D56] text-white border border-white 
                                    px-4 sm:px-6 py-2 sm:py-2.5 rounded 
@@ -29,11 +27,10 @@ export default function Navigate() {
 
             <div className="py-8 sm:py-16 flex flex-col lg:flex-row justify-center gap-8 px-4 sm:px-8 md:px-16 lg:px-32">
                 <div className="w-full lg:w-2/5 py-8 px-6 sm:px-8 text-center border-2 shadow-lg rounded-md" data-aos="fade-right"
-                    data-aos-offset="200"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="true"
+
+                    data-aos-duration="300"
+                    // data-aos-easing="ease-in-out"
+
                     data-aos-anchor-placement="top-center">
                     <Image src={hi} alt="" className="w-full my-4" />
                     {/* <DashedLine /> */}
@@ -47,11 +44,9 @@ export default function Navigate() {
                 </div>
 
                 <div className="w-full lg:w-2/5 py-8 px-6 sm:px-8 text-center border-2 shadow-lg rounded-md" data-aos="fade-left"
-                    data-aos-offset="200"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="true"
+
+                    data-aos-duration="500"
+
                     data-aos-anchor-placement="top-center">
                     <Image src={hi} alt="" className="w-full my-4" />
                     {/* <DashedLine /> */}

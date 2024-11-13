@@ -11,7 +11,7 @@ export default function Navbar() {
 
     const navItems = [
         { name: 'Home', path: '/' },
-        { name: 'Admission', path: '/admission' },
+        // { name: 'Admission', path: '/admission' },
         // { name: 'Cadet Pilot Training', path: '/cadet-pilot-training' },
         { name: 'DGCA Classes', path: '/dgcaclass' },
         { name: 'About Us', path: '/about' },
