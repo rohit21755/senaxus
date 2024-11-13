@@ -31,7 +31,7 @@ const FAQAccordion = () => {
         education.
       </p>
       
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
         {faqs.map(faq => (
           <div key={faq.id} className="flex flex-col">
             <div

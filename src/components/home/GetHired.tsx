@@ -7,7 +7,7 @@ export default function GetHired() {
     return<>
     <div className="p-16 my-8">
         <h1 className="font-bold text-4xl text-center">Get Hired</h1>
-        <div className="flex justify-between px-20 mt-20">
+        <div className="flex justify-between flex-col md:flex-row gap-20 items-center  px-20 mt-20">
             <div>
                 <Image src={airasia} alt=""/>
             </div>

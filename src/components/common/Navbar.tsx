@@ -33,7 +33,7 @@ export default function Navbar() {
             {/* Hamburger Icon for Mobile */}
             <div className="md:hidden">
                 <button onClick={toggleMenu} aria-label="Toggle menu">
-                    {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                    {isOpen ? <FiX className='absulte bottom-8' size={24} /> : <FiMenu size={24} />}
                 </button>
             </div>
 

@@ -4,31 +4,53 @@ import { RiEnglishInput } from "react-icons/ri";
 import { LuGraduationCap } from "react-icons/lu";
 export default function Requirements(){
     return<>
-    <div className="my-12 p-16">
-        <div className="text-center">
-        
-        <div className="flex justify-evenly gap-20 my-12">
-            <div className="rounded-md border-2 shadow-md py-12 px-4">
-            <div className="rounded-md p-2 bg-[#F1F9FD] w-fit border-2 mx-auto"><TbRating18Plus size={30}/></div>
-                <h2 className="text-xl font-bold my-4">Minimum age requirement</h2>
-                <p className="font-thin">Our passionate and qualified teachers create a supportive and stimulating learning environment.
-                </p>
-            </div>
-            <div className="rounded-md border-2 shadow-md py-12 px-4">
-            <div className="rounded-md p-2 bg-[#F1F9FD] w-fit border-2 mx-auto"><RiEnglishInput size={28}/></div>
-                <h2 className="text-xl font-bold my-4">English Prfciency</h2>
-                <p className="font-thin">Our passionate and qualified teachers create a supportive and stimulating learning environment.
-                </p>
-            </div>
-            <div className="rounded-md border-2 shadow-md py-12 px-4">
-            <div className="rounded-md p-2 bg-[#F1F9FD] w-fit border-2 mx-auto">
-            <LuGraduationCap size={30}/></div>
-                <h2 className="text-xl font-bold my-4">10+2 Physics/ maths</h2>
-                <p className="font-thin">Our passionate and qualified teachers create a supportive and stimulating learning environment.
-                </p>
+    <div className="p-6 md:p-16 my-12">
+            <div className="text-center">
+                <h1 className="text-3xl md:text-4xl font-bold mb-8">Requirements</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-12">
+                    <div
+                        className="rounded-md border-2 shadow-md py-8 px-4 text-center"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                    >
+                        <div className="rounded-md p-2 bg-[#F1F9FD] w-fit border-2 mx-auto mb-4">
+                            <TbRating18Plus size={30} />
+                        </div>
+                        <h2 className="text-xl font-bold mb-2">Minimum Age Requirement</h2>
+                        <p className="font-thin text-gray-700">
+                            Our passionate and qualified teachers create a supportive and stimulating learning environment.
+                        </p>
+                    </div>
+                    
+                    <div
+                        className="rounded-md border-2 shadow-md py-8 px-4 text-center"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                    >
+                        <div className="rounded-md p-2 bg-[#F1F9FD] w-fit border-2 mx-auto mb-4">
+                            <RiEnglishInput size={28} />
+                        </div>
+                        <h2 className="text-xl font-bold mb-2">English Proficiency</h2>
+                        <p className="font-thin text-gray-700">
+                            Our passionate and qualified teachers create a supportive and stimulating learning environment.
+                        </p>
+                    </div>
+
+                    <div
+                        className="rounded-md border-2 shadow-md py-8 px-4 text-center"
+                        data-aos="fade-up"
+                        data-aos-duration="2000"
+                    >
+                        <div className="rounded-md p-2 bg-[#F1F9FD] w-fit border-2 mx-auto mb-4">
+                            <LuGraduationCap size={30} />
+                        </div>
+                        <h2 className="text-xl font-bold mb-2">10+2 Physics/Math</h2>
+                        <p className="font-thin text-gray-700">
+                            Our passionate and qualified teachers create a supportive and stimulating learning environment.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
     </>
 }

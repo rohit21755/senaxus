@@ -85,51 +85,64 @@ export default function Hero(){
                 </div>
     <h1 className='text-4xl font-bold mx-auto text-center mx-autot w-[70%] my-8'>To be a global leader in flight training, producing skilled and responsible aviators who contribute to the future of aviation.</h1>
     </div>
-    <div className="flex justify-evenly my-12 p-8">
-    <div className="flex-1 max-w-xs rounded-md border-2 shadow-md py-12 px-4" data-aos="fade-left"
-    data-aos-offset="200"
-    // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center">
-        <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'><FaChartPie size={25}/></div>
-        <h2 className="text-xl font-bold my-4">Safety First</h2>
-        <p className="font-thin">
-            Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.
-        </p>
-    </div>
-    <div className="flex-1 max-w-xs rounded-md border-2 shadow-md py-12 px-4" data-aos="fade-left"
-    data-aos-offset="200"
-    // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center">
-        <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'><RiFlashlightFill size={25}/></div>
-        <h2 className="text-xl font-bold my-4">Excellence and Professionalism</h2>
-        <p className="font-thin">
-            Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy&apos;s commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.
-        </p>
-    </div>
-    <div className="flex-1 max-w-xs rounded-md border-2 shadow-md py-12 px-4" data-aos="fade-left"
-    data-aos-offset="200"
-    // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center">
-        <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'><MdOutlineBarChart size={25}/></div>
-        <h2 className="text-xl font-bold my-4">Flexible Program</h2>
-        <p className="font-thin">
-            Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM (Science, Technology, Engineering, Arts, and Mathematics) programs that ignite creativity and critical thinking in young learners.
-        </p>
-    </div>
-    
-</div>
+    <div className="flex flex-col md:flex-row md:justify-evenly gap-8 my-12 p-4 sm:p-8">
+            {/* Safety First Card */}
+            <div className="flex-1 max-w-xs rounded-md border-2 shadow-md py-8 sm:py-12 px-4 mx-auto md:mx-0" 
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center">
+                
+                <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'>
+                    <FaChartPie size={25}/>
+                </div>
+                <h2 className="text-lg sm:text-xl font-bold my-4">Safety First</h2>
+                <p className="text-sm sm:text-base font-thin">
+                    Received from the Green Earth Society for our dedication to environmental education, sustainable practices, and fostering a love for nature in our students.
+                </p>
+            </div>
+
+            {/* Excellence and Professionalism Card */}
+            <div className="flex-1 max-w-xs rounded-md border-2 shadow-md py-8 sm:py-12 px-4 mx-auto md:mx-0" 
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center">
+                
+                <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'>
+                    <RiFlashlightFill size={25}/>
+                </div>
+                <h2 className="text-lg sm:text-xl font-bold my-4">Excellence and Professionalism</h2>
+                <p className="text-sm sm:text-base font-thin">
+                    Presented by the National Association for the Education of Young Children (NAEYC) in recognition of our commitment to delivering exceptional early childhood education and fostering a nurturing learning environment.
+                </p>
+            </div>
+
+            {/* Flexible Program Card */}
+            <div className="flex-1 max-w-xs rounded-md border-2 shadow-md py-8 sm:py-12 px-4 mx-auto md:mx-0" 
+                data-aos="fade-left"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-anchor-placement="top-center">
+                
+                <div className='p-2 bg-[#CAE7F6] rounded-lg border-2 border-black w-fit'>
+                    <MdOutlineBarChart size={25}/>
+                </div>
+                <h2 className="text-lg sm:text-xl font-bold my-4">Flexible Program</h2>
+                <p className="text-sm sm:text-base font-thin">
+                    Awarded by the Education Excellence Association for our pioneering efforts in introducing innovative STEAM programs that ignite creativity and critical thinking in young learners.
+                </p>
+            </div>
+        </div>
 
    
     </>
