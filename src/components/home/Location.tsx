@@ -6,7 +6,7 @@ import srilanka from '@/assets/srilanka.png'
 import aus from '@/assets/australia.png'
 import canda from '@/assets/canada.png'
 import world from '@/assets/world.png'
-import h1 from '@/assets/h1.png'
+import hg from '@/assets/hhfhfhfh.webp'
 import planwm from '@/assets/planwm.png'
 import { useEffect } from "react"
 import AOS from "aos";
@@ -80,54 +80,30 @@ export default function Location(){
     </div>
 
     <div className="px-6 sm:px-12 md:px-24 py-6">
-    <div
-        style={{
-            backgroundImage: `url(${h1.src})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '70vh',
-            color: 'white',
-            margin: 0,
-            padding: 0,
-            display: 'flex',
-            flexDirection: 'column',
-            borderRadius: '20px'
-        }}
-    >
-        <div className="w-full md:w-2/5 bg-black bg-opacity-50 rounded-l-none md:rounded-l-[20px] p-6 sm:p-12 md:p-24 h-full flex flex-col justify-center">
-            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl" data-aos="fade-up"
-    data-aos-offset="200"
-    // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center">Get ready for your first take off</h1>
-            <p data-aos="fade-up"
-    data-aos-offset="200"
-    // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center" className="font-semibold text-base sm:text-lg md:text-xl mt-4 sm:mt-8 md:mt-12 w-full sm:w-10/12 text-justify">
-                We prepare the next generation of pilots with world-class training, hands-on experience, and cutting-edge technology. Whether you&apos;re dreaming of a career in aviation or upgrading your skills, we’re here to help you soar.
-            </p>
-            <button data-aos="fade-up"
-    data-aos-offset="200"
-    // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center" className="bg-transparent text-white border border-white 
-                               px-4 md:px-6 py-2 md:py-2.5 rounded 
-                               hover:bg-white hover:text-black 
-                               transition duration-300 
-                               text-sm md:text-base
-                               mt-6 sm:mt-6 md:mt-4">
-                Know More
-            </button>
+    <div className="my-12 px-12">
+        <div className="rounded-xl border-2 boder-gray-700  flex gap-10">
+        <div className="flex items-center justify-center ">
+    <div className="flex-1 text-center p-4">
+        <p className="text-3xl font-bold my-4 pl-8 w-4/5">DGCA Ground Classes For CPL Exams</p>
+        <p className="text-xl">DGCA Certified - Chief Ground Instructor</p>
+        <button data-aos="fade-up"
+                data-aos-duration="2000"
+                data-aos-delay="000" 
+                className="bg-[#3F3D56] text-white border border-white 
+                           px-4 md:px-6 py-2 md:py-2.5 rounded 
+                           hover:bg-black 
+                           transition duration-300 
+                           text-sm md:text-base
+                           mt-4 md:mt-6 lg:mt-8">
+            Learn More
+        </button>
+    </div>
+</div>  <div className="flex-1 flex justify-end">
+<div className=" ">
+                    <Image src={hg} alt="" className="rounded-r-xl"/>
+                </div>
+</div>
+                
         </div>
     </div>
 </div>

@@ -1,5 +1,4 @@
 import Boxes from "../ui/Boxes"
-import DashedLine from "../ui/DashedLine"
 import Image from "next/image"
 import h2 from "@/assets/h2.png"
 export default function Offered(){
@@ -36,18 +35,19 @@ export default function Offered(){
             </div>
             <div className="w-1/5"></div>
         </div>
-        <div className="flex md:flex-row flex-col  justify-between p-16">
-    <div className="md:pl-24">
-        <h1 className="text-4xl font-bold my-4 w-4/5" data-aos="fade-up"
+        <div className="px-28 my-8">
+        <div className="flex gap-12 md:flex-row flex-col  justify-between p- border-2 rounded-xl shadow-xl">
+    <div className="flex-1 p-12">
+        <h1 className="text-3xl font-bold my-4" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
+    // data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">DGCA CPL Ground Classes</h1>
-        <DashedLine/>
-        <ul className="space-y-4 text-2xl" data-aos="fade-up"
+        {/* <DashedLine/> */}
+        <ul className="space-y-4 text-xl" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
@@ -76,7 +76,7 @@ export default function Offered(){
                 <span className="text-gray-700">Airline Job Assistance</span>
             </li>
         </ul>
-        <button className="w-full text-center p-2 border-2 border-black rounded-md mt-4" data-aos="fade-up"
+        <button className="w-4/5 text-center p-2 border-2 border-black rounded-md mt-4" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
@@ -87,38 +87,29 @@ export default function Offered(){
     </div>
     <div>
         <Image src={h2} alt="" data-aos="fade-up"
-    data-aos-offset="200"
+    
     // data-aos-delay="50"
     data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
+    
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center"/>
     </div>
 </div>
-
-        <div className="flex md:flex-row flex-col gap-10  justify-between p-16">
-        <div className="">
-                <Image src={h2} alt="" data-aos="fade-up"
+        </div>
+        <div className="px-28 my-8">
+        <div className="flex gap-12 md:flex-row flex-col  justify-between p- border-2 rounded-xl shadow-xl">
+    <div className="flex-1 p-12">
+        <h1 className="text-3xl font-bold my-4" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="true"
-    data-aos-anchor-placement="top-center"/>
-            </div>
-            <div className="md:pr-24 xl:pr-32">
-                <h1 className="text-4xl font-bold my-4 w-4/5" data-aos="fade-up"
-    data-aos-offset="200"
-    // data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
+    // data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">DGCA CPL Ground Classes</h1>
-                <DashedLine/>
-            <ul className="space-y-4 text-2xl" data-aos="fade-up"
+        {/* <DashedLine/> */}
+        <div className="space-y-4 text-lg" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
@@ -126,28 +117,9 @@ export default function Offered(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
-            <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">CPL in 8 to 10 months</span>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Glass Cockpit Aircrafts &</span>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Experienced Instructors</span>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Experienced Visa team with 97% success</span>
-            </li>
-            <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Airline Job Assistance</span>
-            </li>
-          </ul>
-          <button className="w-full text-centet p-2 border-2 border-black rounded-md mt-4" data-aos="fade-up"
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, molestiae. Tempora distinctio explicabo, eum animi sunt repudiandae maiores excepturi! Sunt quam ducimus eaque deleniti tempora suscipit similique officia molestiae ea?</p>
+        </div>
+        <button className="w-4/5 text-center p-2 border-2 border-black rounded-md mt-4" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
@@ -155,21 +127,35 @@ export default function Offered(){
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">Learn More</button>
-            </div>
-            
+    </div>
+    {/* <div className="p-4"> */}
+      {/* <div className="p-4 rounded-xl border-2"> */}
+      <Image src={h2} alt="" data-aos="fade-up"
+    
+    // data-aos-delay="50"
+    data-aos-duration="1000"
+    
+    data-aos-mirror="true"
+    data-aos-once="true"
+    data-aos-anchor-placement="top-center"/>
+      {/* </div> */}
+        
+    {/* </div> */}
+</div>
         </div>
-        <div className="flex md:flex-row flex-col gap-10  justify-between p-16">
-            <div className="md:pl-24">
-                <h1 className="text-4xl font-bold my-4 w-4/5" data-aos="fade-up"
+        <div className="px-28 my-8">
+        <div className="flex gap-12 md:flex-row flex-col  justify-between p- border-2 rounded-xl shadow-xl">
+    <div className="flex-1 p-12">
+        <h1 className="text-3xl font-bold my-4" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
+    // data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="true"
     data-aos-anchor-placement="top-center">DGCA CPL Ground Classes</h1>
-                <DashedLine/>
-            <ul className="space-y-4 text-2xl" data-aos="fade-up"
+        {/* <DashedLine/> */}
+        <ul className="space-y-4 text-xl" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
@@ -178,39 +164,49 @@ export default function Offered(){
     data-aos-once="true"
     data-aos-anchor-placement="top-center">
             <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">CPL in 8 to 10 months</span>
+                <span className="text-gray-700">•</span>
+                <span className="text-gray-700">CPL in 8 to 10 months</span>
             </li>
             <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Glass Cockpit Aircrafts &</span>
+                <span className="text-gray-700">•</span>
+                <span className="text-gray-700">Glass Cockpit Aircrafts &</span>
             </li>
             <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Experienced Instructors</span>
+                <span className="text-gray-700">•</span>
+                <span className="text-gray-700">Experienced Instructors</span>
             </li>
             <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Experienced Visa team with 97% success</span>
+                <span className="text-gray-700">•</span>
+                <span className="text-gray-700">Experienced Visa team with 97% success</span>
             </li>
             <li className="flex items-start space-x-2">
-              <span className="text-gray-700">•</span>
-              <span className="text-gray-700">Airline Job Assistance</span>
+                <span className="text-gray-700">•</span>
+                <span className="text-gray-700">Airline Job Assistance</span>
             </li>
-          </ul>
-          <button className="w-full text-centet p-2 border-2 border-black rounded-md mt-4">Learn More</button>
-            </div>
-            <div className="">
-                <Image src={h2} alt="" data-aos="fade-up"
+        </ul>
+        <button className="w-4/5 text-center p-2 border-2 border-black rounded-md mt-4" data-aos="fade-up"
     data-aos-offset="200"
     // data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="true"
+    data-aos-anchor-placement="top-center">Learn More</button>
+    </div>
+    <div>
+        <Image src={h2} alt="" data-aos="fade-up"
+    
+    // data-aos-delay="50"
+    data-aos-duration="1000"
+    
+    data-aos-mirror="true"
+    data-aos-once="true"
     data-aos-anchor-placement="top-center"/>
-            </div>
+    </div>
+</div>
         </div>
+        
+
         
     </>
 }
