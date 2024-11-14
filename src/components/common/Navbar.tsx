@@ -1,15 +1,15 @@
 "use client";
 import Link from 'next/link';
-import { useState } from 'react';
-// import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 import logo from '@/assets/logo.png'; // Replace with the path to your logo
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    // const router = useRouter();
-
+    const [currentPath, setCurrentPath] = useState('/');
+    const router = useRouter();
     const navItems = [
         { name: 'Home', path: '/' },
         { name: 'DGCA Classes', path: '/dgcaclass' },
@@ -17,11 +17,15 @@ export default function Navbar() {
         { name: 'Contact', path: '/contact' }
     ];
 
-    // Close the menu when the route changes
-   
+    // Update current path when it changes
+    useEffect(() => {
+        setCurrentPath(window.location.pathname);
+    }, []);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
+    const handleNavigation = (path: any) => {
+        setCurrentPath(path);
+        setIsOpen(false);
+        router.push(path);
     };
 
     return (
@@ -33,7 +37,7 @@ export default function Navbar() {
 
             {/* Hamburger Icon for Mobile */}
             <div className="md:hidden">
-                <button onClick={toggleMenu} aria-label="Toggle menu">
+                <button onClick={()=>setIsOpen(!isOpen)} aria-label="Toggle menu">
                     {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
                 </button>
             </div>
@@ -41,7 +45,7 @@ export default function Navbar() {
             {/* Navigation Links */}
             <div className={`md:flex items-center space-x-4 md:space-x-8 text-base md:text-lg ${isOpen ? 'block' : 'hidden'} md:block`}>
                 {navItems.map((item) => (
-                    <Link key={item.path} href={item.path}>
+                    <button key={item.path} onClick={() => handleNavigation(item.path)}>
                         <p
                             className={`block py-2 px-4 rounded 
                                   text-gray-700 hover:bg-gray-100
@@ -49,7 +53,7 @@ export default function Navbar() {
                         >
                             {item.name}
                         </p>
-                    </Link>
+                    </button>
                 ))}
             </div>
         </nav>
