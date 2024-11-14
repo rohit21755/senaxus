@@ -21,7 +21,7 @@ export default function Navbar() {
         setCurrentPath(window.location.pathname);
     }, []);
 
-    const handleNavigation = (path: any) => {
+    const handleNavigation = (path: string) => {
         console.log(currentPath);
         setCurrentPath(path);
         setIsOpen(false);
