@@ -1,5 +1,4 @@
 "use client";
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -23,6 +22,7 @@ export default function Navbar() {
     }, []);
 
     const handleNavigation = (path: any) => {
+        console.log(currentPath);
         setCurrentPath(path);
         setIsOpen(false);
         router.push(path);
