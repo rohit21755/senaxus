@@ -1,14 +1,14 @@
 "use client";
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+// import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 import logo from '@/assets/logo.png'; // Replace with the path to your logo
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-    const router = useRouter();
+    // const router = useRouter();
 
     const navItems = [
         { name: 'Home', path: '/' },
