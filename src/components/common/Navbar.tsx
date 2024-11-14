@@ -1,22 +1,24 @@
 "use client";
 import Link from 'next/link';
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 import logo from '@/assets/logo.png'; // Replace with the path to your logo
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const router = useRouter();
 
     const navItems = [
         { name: 'Home', path: '/' },
-        // { name: 'Admission', path: '/admission' },
-        // { name: 'Cadet Pilot Training', path: '/cadet-pilot-training' },
         { name: 'DGCA Classes', path: '/dgcaclass' },
         { name: 'About Us', path: '/about' },
         { name: 'Contact', path: '/contact' }
     ];
+
+    // Close the menu when the route changes
+   
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -27,13 +29,12 @@ export default function Navbar() {
             {/* Logo Section */}
             <div className="flex items-center space-x-2">
                 <Image src={logo} alt="Senaxus Logo" width={120} height={120} />
-                
             </div>
 
             {/* Hamburger Icon for Mobile */}
             <div className="md:hidden">
                 <button onClick={toggleMenu} aria-label="Toggle menu">
-                    {isOpen ? <FiX className='absulte bottom-8' size={24} /> : <FiMenu size={24} />}
+                    {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
                 </button>
             </div>
 

@@ -8,7 +8,7 @@ import Offered from "@/components/home/Offered";
 import Requirements from "@/components/home/Requiements";
 import Benefits from "@/components/home/Benefits";
 import FAQAccordion from "@/components/home/Faq";
-// import TestimonialSlider from "@/components/home/TestimonialSlider";
+import TestimonialSlider from "@/components/home/TestimonialSlider";
 import GetHired from "@/components/home/GetHired";
 export default function Home() {
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Home() {
    <Benefits/>
    <GetHired/>
    <FAQAccordion/>
-   {/* <TestimonialSlider/> */}
+   <TestimonialSlider/>
    </>
   );
 }

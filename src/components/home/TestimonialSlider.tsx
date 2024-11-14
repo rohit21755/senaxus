@@ -1,126 +1,103 @@
-"use client";
-import React, { useState } from 'react';
-// import { ChevronLeft, ChevronRight } from 'lucide-react';
-// import { FaCaretLeft } from "react-icons/fa";
-import img from "@/assets/hero.png"
+import { cn } from "@/lib/utils";
+import Marquee from "@/components/ui/marquee";
 
-const TestimonialSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+const reviews = [
+  {
+    name: "Jack",
+    username: "@jack",
+    body: "I've never seen anything like this before. It's amazing. I love it.",
+    img: "https://avatar.vercel.sh/jack",
+  },
+  {
+    name: "Jill",
+    username: "@jill",
+    body: "I don't know what to say. I'm speechless. This is amazing.",
+    img: "https://avatar.vercel.sh/jill",
+  },
+  {
+    name: "John",
+    username: "@john",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/john",
+  },
+  {
+    name: "Jane",
+    username: "@jane",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/jane",
+  },
+  {
+    name: "Jenny",
+    username: "@jenny",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/jenny",
+  },
+  {
+    name: "James",
+    username: "@james",
+    body: "I'm at a loss for words. This is amazing. I love it.",
+    img: "https://avatar.vercel.sh/james",
+  },
+];
 
-  const testimonials = [
-    {
-      id: 1,
-      date: "May 8, 2020",
-      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nibh mauris, nec turpis orci lectus maecenas. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus arcu. Faucibus venenatis felis id augue sit cursus pellentesque enim arcu. Elementum felis magna pretium in tincidunt. Suspendisse sed magna eget nibh in turpis. Consequat duis diam lacus",
-      image: img
-    },
-    // Add more testimonials as needed
-    {
-      id: 2,
-      date: "May 10, 2020",
-      title: "Another great testimonial example here",
-      content: "Similar lorem ipsum content for variety...",
-      image: img
-    },
-    // Add more testimonials to match the 6 dots shown in the design
-  ];
+const firstRow = reviews.slice(0, reviews.length / 2);
+const secondRow = reviews.slice(reviews.length / 2);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-  };
-
+const ReviewCard = ({
+  img,
+  name,
+  username,
+  body,
+}: {
+  img: string;
+  name: string;
+  username: string;
+  body: string;
+}) => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      {/* Header Section */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold mb-4">Our Testimonials</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Our testimonials are heartfelt reflections of the nurturing environment we provide, where
-          children flourish both academically and emotionally.
-        </p>
-      </div>
-
-      {/* Testimonial Slider */}
-      <div className="relative">
-        {/* Decorative Bars */}
-        <div className="absolute right-0 top-0 -z-10">
-          <div className="flex gap-2">
-            {[...Array(12)].map((_, i) => (
-              <div 
-                key={i} 
-                className="w-2 bg-blue-100"
-                style={{
-                  height: `${(i < 6 ? i + 1 : 12 - i) * 20}px`
-                }}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Main Content */}
-        {/* <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
-          <div className="relative border-2">
-            <Image
-              src={testimonials[currentSlide].image}
-              alt="Testimonial"
-              className="rounded-lg"
-            />
-          </div>
-          <div className="space-y-4">
-            <p className="text-gray-500">{testimonials[currentSlide].date}</p>
-            <h3 className="text-xl font-bold">{testimonials[currentSlide].title}</h3>
-            <p className="text-gray-600 leading-relaxed">
-              {testimonials[currentSlide].content}
-            </p>
-          </div>
-        </div> */}
-
-        {/* Navigation */}
-        <div className="flex items-center justify-center gap-8">
-          {/* Previous Button */}
-          <button 
-            onClick={prevSlide}
-            className="p-2 rounded-full hover:bg-gray-100"
-            aria-label="Previous testimonial"
-          >
-        left 
-          </button>
-
-          {/* Dots */}
-          <div className="flex gap-3">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? 'bg-gray-800 w-4' : 'bg-gray-300'
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
-
-          {/* Next Button */}
-          <button 
-            onClick={nextSlide}
-            className="p-2 rounded-full hover:bg-gray-100"
-            aria-label="Next testimonial"
-          >
-            right
-          </button>
+    <figure
+      className={cn(
+        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        // light styles
+        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+        // dark styles
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
+      )}
+    >
+      <div className="flex flex-row items-center gap-2">
+        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+        <div className="flex flex-col">
+          <figcaption className="text-sm font-medium dark:text-white">
+            {name}
+          </figcaption>
+          <p className="text-xs font-medium dark:text-white/40">{username}</p>
         </div>
       </div>
-    </div>
+      <blockquote className="mt-2 text-sm">{body}</blockquote>
+    </figure>
   );
 };
 
-export default TestimonialSlider;
+export default function TestimonialSlider() {
+  return (<>
+
+    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+    <h2 className=" text-center my-8 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
+      What our customers are saying
+    </h2>
+      <Marquee pauseOnHover className="[--duration:20s]">
+        {firstRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
+      <Marquee reverse pauseOnHover className="[--duration:20s]">
+        {secondRow.map((review) => (
+          <ReviewCard key={review.username} {...review} />
+        ))}
+      </Marquee>
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+    </div>
+    </>
+  );
+}
